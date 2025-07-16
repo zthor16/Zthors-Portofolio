@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZTHOR Portfolio</title>
+
+  <!-- LINK KE FILE CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- LINK AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- SECTION 1: HALAMAN WELCOME -->
+  <section class="section" id="page1" data-aos="fade-up">
+    <div class="left">
+      <h1>WELCOME TO <span class="highlight">ZTHOR</span></h1>
+    </div>
+    <div class="right">
+      <!-- GANTI DENGAN FOTO -->
+      <img src="Untitled-2.png3.png" alt="My Photo" class="profile-photo" />
+    </div>
+  </section>
+
+  <!-- SECTION 2: PROJECTS DAN CONTACT -->
+  <section class="section" id="page2" data-aos="fade-up">
+<div class="projects-centered">
+
+  <!-- GAMBAR ICON UNTUK PICTURE PROJECT -->
+  <div class="project" onclick="location.href='#picture'">
+    <h3>PICTURE PROJECT</h3>
+    <img src="picture.png" alt="Picture Icon" class="project-icon" />
+  </div>
+
+  <!-- GAMBAR ICON UNTUK ABOUT ME -->
+  <div class="project" onclick="location.href='#about'">
+    <h3>ABOUT ME</h3>
+    <img src="about.png" alt="About Icon" class="project-icon" />
+  </div>
+
+  <!-- GAMBAR ICON UNTUK VIDEO PROJECT -->
+  <div class="project" onclick="location.href='#video'">
+    <h3>VIDEO PROJECT</h3>
+    <img src="video.png" alt="Video Icon" class="project-icon" />
+  </div>
+
+</div>
+
+
+    <footer>
+      <h3>CONTACT</h3>
+      <p>6285161367223</p>
+      <div class="social_media">IG & TikTok</div>
+      <p>@zthor16</p>
+    </footer>
+  </section>
+
+  <!-- SCRIPT AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: false // biar animasi bisa aktif tiap scroll naik/turun
+    });
+  </script>
+</body>
+</html>
