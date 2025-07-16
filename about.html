@@ -31,13 +31,18 @@
       background-image: url(background2.png);
       background-size: cover;
       background-position: center;
-      color: rgb(0, 0, 0); /* Ubah warna teks */
-      text-shadow: 0 0 5px rgba(0,0,0,0.6); /* Supaya tetap kebaca */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       padding: 60px;
+      @media (max-width: 768px) {
+  .about-right {
+    background-image: none; /* atau ganti warna solid kalau mau */
+    background-color: #ffffff; /* ⬅️ kamu bisa ganti ini sesuai selera */
+  }
+}
+
     }
 
     .about-right h1 {
@@ -49,6 +54,8 @@
       font-size: 1.2em;
       line-height: 1.8;
       max-width: 600px;
+            color: rgb(0, 0, 0); /* Ubah warna teks */
+      text-shadow: 0 0 5px rgba(0,0,0,0.6); /* Supaya tetap kebaca */
     }
 
     .back-btn {
