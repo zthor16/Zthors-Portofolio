@@ -12,42 +12,63 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
   <style>
-    /* ✅ Tambahan internal CSS jika styles.css tidak terbaca */
+    /* Layout utama untuk halaman About */
     .about-wrapper {
       display: flex;
-      min-height: 100vh;
+      height: 100vh;
+      overflow: hidden;
     }
 
     .about-left {
       flex: 1;
-      background-image: url(thor.png);
+      background-image: url(thor.png); /* ✅ Ganti dengan nama file gambar kamu */
       background-size: cover;
       background-position: center;
     }
 
     .about-right {
       flex: 1;
-      padding: 60px;
+      background-image: url(background3.png);
+      background-size: cover;
+      background-position: center;
+      color: rgb(0, 0, 0); /* Ubah warna teks */
+      text-shadow: 0 0 5px rgba(0,0,0,0.6); /* Supaya tetap kebaca */
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-image: url(background2.png);
-      background-size: cover;
-      background-position: center;
-      color: #000;
+      align-items: flex-start;
+      padding: 60px;
+    }
+
+    .about-right h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .about-right p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 600px;
     }
 
     .back-btn {
-      margin-top: 20px;
+      margin-top: 30px;
+      background-color: #222;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
+      border-radius: 8px;
     }
 
-    /* ✅ Tambahan untuk responsif HP */
+    .back-btn:hover {
+      background-color: #444;
+    }
+
+    /* ✅ Tambahan agar tidak kegencet di HP */
     @media (max-width: 768px) {
       .about-wrapper {
         flex-direction: column;
+        height: auto;
       }
 
       .about-left,
@@ -57,24 +78,9 @@
       }
 
       .about-right {
-        padding: 20px;
-        justify-content: flex-start;
+        align-items: center;
         text-align: center;
-      }
-
-      .about-right h1 {
-        font-size: 1.8em;
-      }
-
-      .about-right p {
-        font-size: 1em;
-        line-height: 1.6;
-      }
-
-      .back-btn {
-        display: inline-block;
-        margin-top: 20px;
-        font-size: 1em;
+        padding: 30px;
       }
     }
   </style>
