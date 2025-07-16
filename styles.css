@@ -114,3 +114,50 @@ footer {
   background-color: rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
 }
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-left, .about-right {
+    width: 100%;
+    height: 50vh; /* atau auto jika terlalu sempit */
+  }
+
+  .about-right {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .about-right h1 {
+    font-size: 1.8em;
+  }
+
+  .about-right p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+}
+.about-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.about-left {
+  flex: 1;
+  background-image: url(thor.png); /* Ganti sesuai nama file */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(background2.png); /* opsional */
+  background-size: cover;
+  background-position: center;
+  color: #000;
+}
