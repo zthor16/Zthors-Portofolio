@@ -20,7 +20,7 @@
     </div>
     <div class="right">
       <!-- GANTI DENGAN FOTO -->
-      <img src="Untitled-2.png3.png" alt="My Photo" class="profile-photo" />
+      <img src="background1.png" alt="My Photo" class="profile-photo" />
     </div>
   </section>
 
@@ -28,23 +28,24 @@
   <section class="section" id="page2" data-aos="fade-up">
 <div class="projects-centered">
 
-  <!-- GAMBAR ICON UNTUK PICTURE PROJECT -->
-  <div class="project" onclick="location.href='#picture'">
-    <h3>PICTURE PROJECT</h3>
-    <img src="picture.png" alt="Picture Icon" class="project-icon" />
-  </div>
+  <!-- BUTTON: Picture Project -->
+<div class="project" onclick="handleClick(this, 'picture.html')">
+  <h3>PICTURE PROJECT</h3>
+  <img src="picture.png" alt="Picture Icon" class="project-icon" />
+</div>
 
-  <!-- GAMBAR ICON UNTUK ABOUT ME -->
-  <div class="project" onclick="location.href='#about'">
-    <h3>ABOUT ME</h3>
-    <img src="about.png" alt="About Icon" class="project-icon" />
-  </div>
+<!-- BUTTON: About Me -->
+<div class="project" onclick="handleClick(this, 'about.html')">
+  <h3>ABOUT ME</h3>
+  <img src="about.png" alt="About Icon" class="project-icon" />
+</div>
 
-  <!-- GAMBAR ICON UNTUK VIDEO PROJECT -->
-  <div class="project" onclick="location.href='#video'">
-    <h3>VIDEO PROJECT</h3>
-    <img src="video.png" alt="Video Icon" class="project-icon" />
-  </div>
+<!-- BUTTON: Video Project -->
+<div class="project" onclick="handleClick(this, 'video.html')">
+  <h3>VIDEO PROJECT</h3>
+  <img src="video.png" alt="Video Icon" class="project-icon" />
+</div>
+
 
 </div>
 
@@ -58,13 +59,20 @@
   </section>
 
   <!-- SCRIPT AOS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   <!-- Script klik efek & pindah halaman -->
   <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: false // biar animasi bisa aktif tiap scroll naik/turun
-    });
+    function handleClick(element, url) {
+      element.classList.add("clicked");
+      setTimeout(() => {
+        window.location.href = url;
+      }, 150);
+    }
+  </script>
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
   </script>
 </body>
 </html>

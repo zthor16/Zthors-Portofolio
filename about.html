@@ -1,0 +1,89 @@
+<!-- ===================
+ABOUT ME PAGE
+======================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - ZTHOR</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Layout utama untuk halaman About */
+    .about-wrapper {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .about-left {
+      flex: 1;
+      background-image: url(thor.png); /* ✅ Ganti dengan nama file gambar kamu */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about-right {
+      flex: 1;
+      background-image: url(background3.png);
+      background-size: cover;
+      background-position: center;
+        color: rgb(0, 0, 0); /* Ubah warna teks */
+      text-shadow: 0 0 5px rgba(0,0,0,0.6); /* Supaya tetap kebaca */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+       align-items: flex-start;
+      padding: 60px;
+    }
+
+    .about-right h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .about-right p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      max-width: 600px;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      background-color: #222;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .back-btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-wrapper">
+    <!-- 📷 KIRI: Foto kamu -->
+    <div class="about-left">
+      <!-- background image diatur lewat CSS -->
+    </div>
+
+    <!-- 📝 KANAN: Teks tentang kamu -->
+    <div class="about-right">
+      <h1>Who is ZTHOR?</h1>
+      <p>
+        My real name is Thoriq Ahmad, called as Thor is a passionate visual designer & illustrator from Indonesia.
+        Im now studying at Widyatama University as Bachelor's Degree of Informatic. And Highscool in building information
+        design and modeling
+        Im enjoys crafting art, drawing inspiration from movie,real life pict, games,
+        and digital pop culture. This site showcases my growth and passion.
+      </p>
+      <a class="back-btn" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
