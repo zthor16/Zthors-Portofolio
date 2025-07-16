@@ -41,6 +41,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-text-fill-color: black;
 }
 
 /* FOTO DI BAGIAN KANAN PENUH */
